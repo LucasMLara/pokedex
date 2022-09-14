@@ -4,5 +4,23 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   background-color: #F9F2ED;
-  list-style: 'none';
+  list-style: none;
+}
+
+a,
+li {
+  background-color: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.themeIcons {
+  font-size: 2em;
+  color: inherit;
+  background: inherit;
+  transition: 0.5s ease-out;
+}
+
+.themeIcons:hover {
+  opacity: 0.6;
 }
