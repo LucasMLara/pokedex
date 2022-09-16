@@ -1,7 +1,8 @@
 import React from 'react'
 
-import { StyledFooter, P, InfoContainer, SocialMediaContainer} from './FooterStyle'
+import { StyledFooter, P, InfoContainer, SocialMediaContainer, StyledInstagram } from './FooterStyle'
 import { FaInstagram, FaLinkedin, FaGithubSquare } from "react-icons/fa";
+
 const year = new Date().getFullYear()
 export default function Footer() {
 
@@ -12,6 +13,7 @@ export default function Footer() {
         <P>{year}</P>
       </InfoContainer>
       <SocialMediaContainer>
+      <StyledInstagram>
         <li>
           <a href='https://www.instagram.com/lucas.m.lara/' target='_blank' rel="noreferrer">
             <FaInstagram />
@@ -23,6 +25,7 @@ export default function Footer() {
         <a href='https://github.com/LucasMLara' target='_blank' rel="noreferrer">
           <FaGithubSquare />
         </a>
+      </StyledInstagram>
       </SocialMediaContainer>
     </StyledFooter>
   )

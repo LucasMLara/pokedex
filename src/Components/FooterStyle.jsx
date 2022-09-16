@@ -1,4 +1,22 @@
 import styled from "styled-components";
+import { FaInstagram, FaLinkedin, FaGithubSquare } from "react-icons/fa";
+
+const StyledInstagram = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 9em;
+  background: inherit;
+  svg{
+    font-size: 2em;
+    color: inherit;
+    background: inherit;
+    transition: 0.5s ease-out;
+  }
+  svg:hover{
+    scale:1.25;
+    opacity: 0.5;
+  }
+`
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -7,7 +25,7 @@ const StyledFooter = styled.footer`
   position: absolute;
   width: 100%;
   bottom: 0;
-  height: 5em;
+  height: var(--footer-height);
   background: hsl(0,100%,80%);
   color: #ffff;
   font-size: 1em;
@@ -26,16 +44,10 @@ const SocialMediaContainer = styled.ul`
   width: 9em;
   background: inherit;
 `
-const ListMediaItem = styled.li`
-  a{
-    
-  }
-`
-
 const P = styled.p`
   background: inherit;
   color: #3f3f3f;
   font-weight: 600;
 `
 
-export { StyledFooter, P, InfoContainer, SocialMediaContainer, ListMediaItem }
+export { StyledFooter,StyledInstagram, P, InfoContainer, SocialMediaContainer}
