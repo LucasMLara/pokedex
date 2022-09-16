@@ -1,4 +1,6 @@
 * {
+  --header-height: 100px;
+  --footer-height: 100px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,20 +9,16 @@
   list-style: none;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
 a,
 li {
   background-color: inherit;
   color: inherit;
   text-decoration: inherit;
-}
-
-.themeIcons {
-  font-size: 2em;
-  color: inherit;
-  background: inherit;
-  transition: 0.5s ease-out;
-}
-
-.themeIcons:hover {
-  opacity: 0.6;
 }
