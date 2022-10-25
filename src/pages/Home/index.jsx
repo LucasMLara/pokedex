@@ -1,7 +1,11 @@
 import React from 'react'
+import PokemonCard from '../../Components/PokemonCard'
+import { Main } from './style'
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <Main>
+      <PokemonCard/>
+    </Main>
   )
 }
