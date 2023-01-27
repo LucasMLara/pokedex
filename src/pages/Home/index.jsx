@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import PokemonCard from "../../Components/PokemonCard";
 import { Main, SearchPokemonInput } from "./style";
+import Loading from "../../Components/Loading.tsx";
 
 export default function Home() {
   const [pokemon, setPokemon] = useState();
@@ -20,8 +21,8 @@ export default function Home() {
   useEffect(() => {
     getPokemon("pikachu");
   }, []);
-  console.log(pokemon);
-  if (!pokemon) return <h1>Carregando...</h1>;
+
+  if (!pokemon) return <Loading />;
 
   return (
     <>

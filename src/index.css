@@ -7,6 +7,10 @@
     sans-serif;
   background-color: #F9F2ED;
   list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
 }
 
 html,
